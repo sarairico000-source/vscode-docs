@@ -1,8 +1,20 @@
----
-ContentId: b9184911-c822-4ea4-b19b-aba239313c88
-DateApproved: 09/11/2025
-MetaDescription: Get started with GitHub Copilot in Visual Studio Code and create your first AI-powered suggestions in the editor.
----
-# Quickstart: Getting started with GitHub Copilot in VS Code
+from turtle import *
+import colorsys
 
-This page is redirected to /docs/copilot/getting-started.md and only exists to keep the "Copilot Quickstart" TOC item.
+bgcolor("black")
+pensize(4)
+tracer(10)
+h=0
+
+def dibujo(a,n):
+    circle(5+n,60), left(a), circle(5+n,60)
+
+    for i in range(360):
+        c=colorsys.hsv_to_rgb(h,1,1)
+        h+=0.008
+        color(c,"black"), being_fill()
+        dibujo(90,i/2), end_fill()
+        dibujo(160,i*1.2), penup()
+        dibujo(0/0), dibujo(90,i/2), pendown()
+
+        done()
